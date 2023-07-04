@@ -1,0 +1,31 @@
+{
+  "homepage":"https://prabhjotsingh5.github.io/theindiangoodies",
+  "name": "theindiangoodies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "@trycourier/courier": "^4.1.0",
+    "axios": "^1.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7",
+    "jsonwebtoken": "^8.5.1",
+    "mailersend": "^2.0.5",
+    "mongoose": "^6.6.5",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"npm run start\" \"cd ../client && npm run start\""
+  },
+  "author": "Prabhjot Singh",
+  "license": "ISC"
+}
